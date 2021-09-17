@@ -6,7 +6,7 @@ build_job:
     only:
         - branches
     script:
-        - 'D:\Programs\Nuget\nuget.exe restore'
+        - '"D:\Programs\Nuget\nuget.exe" restore'
         - '& "D:\Programs\Microsoft\Visual Studio Enterprise 2019\MSBuild\Current\Bin\MSBuild.exe" ConsoleApp2.sln'
     artifacts:
         paths:
